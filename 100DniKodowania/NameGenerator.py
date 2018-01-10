@@ -13,3 +13,4 @@ if(choice=='m' or 'M'):
     print(random.choice(male_name)+" "+random.choice(male_surname))
 elif choice=='f' or 'F':
     print(random.choice(female_name)+" "+random.choice(female_surname))
+#test comment
