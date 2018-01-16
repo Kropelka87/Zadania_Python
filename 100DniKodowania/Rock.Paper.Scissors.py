@@ -50,12 +50,12 @@ def gra():
       print('Przegrałeś grę 1 punktem.')
     elif computerCounts-userCounts>1:
       print('Przegrałeś grę %.0f punktami.' % (computerCounts-userCounts))
-gra()
 
-reply=input('Would you like to start the game again? Yes or No: ')
-if reply=='Yes':
-  gra()
-elif reply=='No':
-  print('You are leaving the game jus now.')
+while True:
+    gra()
+    reply=input('Would you like to start the game again? Yes or No: ')
+    if reply=='No':
+        print('You are leaving the game jus now.')
+        break
 
 
